@@ -1,0 +1,10 @@
+@media screen and (min-width: 900px) {
+.wrapBillingAndCardSection {
+  display: flex;
+  justify-content: space-between;
+
+  > div {
+    width: 50%;
+  }
+}
+}

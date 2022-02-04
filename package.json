@@ -1,32 +1,73 @@
 {
   "name": "hemlagat",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "examenarbetet",
-  "main": "server.js",
+  "homepage": "https://luxar.se",
+  "private": true,
   "dependencies": {
-    "dotenv": "^10.0.0",
-    "express": "^4.17.1",
-    "nodemon": "^2.0.15",
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "@material-ui/core": "^4.12.3",
+    "@material-ui/icons": "^5.0.0-beta.4",
+    "@mui/icons-material": "^5.3.0",
+    "@mui/material": "^5.2.3",
+    "@stripe/react-stripe-js": "^1.1.2",
+    "@stripe/stripe-js": "^1.5.0",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "axios": "^0.19.2",
+    "dotenv": "^8.2.0",
+    "formik": "^2.1.4",
     "react": "^17.0.2",
-    "stripe": "^8.191.0"
+    "react-dom": "^16.13.1",
+    "react-redux": "^7.2.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.4.1",
+    "redux": "^4.0.5",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0",
+    "reselect": "^4.0.0"
   },
-  "devDependencies": {},
+  "proxy": "https://hemlagat.herokuapp.com",
   "scripts": {
-    "test": "test",
-    "start": "node server.js",
-    "build": "cd client && npm install && npm run build"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "eslint *.js **/*.js",
+    "lint-fix": "eslint --fix *.js **/*.js",
+    "server": "npm start --prefix server",
+    "client": "npm start",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbild": "npm install --prefix server && npm run build"
   },
-  "engines": {
-    "node": "v14.17.5"
+  "eslintConfig": {
+    "extends": "react-app"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/shic0/hemlagat.git"
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   },
-  "author": "Sherin Valestrand, Kanan Garaisayev, Ryan Cornelio",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/shic0/hemlagat/issues"
+  "devDependencies": {
+    "concurrently": "^2.0.0",
+    "node-sass": "^4.14.1",
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb": "^17.1.1",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.14.3",
+    "prettier": "^1.18.2"
   },
-  "homepage": "https://github.com/shic0/hemlagat#readme"
+  "author": "Sherin Valestrand, Kanan Garaisayev, Ryan Cornelio"
 }

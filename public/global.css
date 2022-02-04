@@ -1,0 +1,66 @@
+.logo {
+  width: 100px;
+}
+
+.mat {
+  width: 300px;
+}
+
+.karta {
+  width: 300px;
+}
+
+.fire {
+  width: 100vw;
+  height: 60px;
+  position: fixed;
+}
+
+.footerKnapppar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-evenly;
+  font-family: "Armata", sans-serif;
+  font-size: 17px;
+  width: 100%;
+}
+
+.footer {
+  position: static;
+  bottom: 0;
+  background: #3f83ba;
+  margin-top: 30px;
+  color: white; 
+  text-align: center
+}
+
+.cookies {
+  position: absolute;
+  margin-top: 0;
+  height: 20%;
+  padding: 0;
+}
+
+.olives{
+  height: 230px;
+  width: 330px;
+}
+
+.actionables {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.padding {
+  padding-top: 30px;
+}
+
+.paddingx {
+margin-left: 20px; 
+ margin-right: 20px;
+}

@@ -1,0 +1,16 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /contact
+Allow: /about
+Allow: /
+Disallow: /checkout
+Disallow: /*.env$
+Disallow: /cart
+
+User-agent: AdsBot-Google
+Allow: /
+Disallow: /*.env$
+
+User-agent: Yandex
+Disallow: /*utm_
+Disallow: /*.env$
